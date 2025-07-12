@@ -1,0 +1,28 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment files (secrets)
+.env
+databases.json
+
+# Local backup/output files
+backups/
+Downloads/
+*.sql
+
+# OS or editor specific files
+.DS_Store
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Git
+.git
+.gitignore
+
+# Logs or debug output
+*.log

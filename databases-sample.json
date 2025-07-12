@@ -1,0 +1,10 @@
+[
+  {
+    "name": "your_database_name",
+    "host": "your.database.host",
+    "port": 3306,
+    "user": "your_db_user",
+    "pass": "your_db_password",
+    "uploads_path": "/mnt/uploads/your_app_code/public_html/public/images"
+  }
+]

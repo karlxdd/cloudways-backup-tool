@@ -1,0 +1,19 @@
+services:
+  backup:
+    build: .
+    container_name: cloudways-backup
+    
+    # Load environment variables from .env file
+    env_file:
+      - .env
+
+    volumes:
+      # Mount local Downloads folder to store backup output (SQL files, uploads)
+      - "${HOME}/Downloads:/app/backups"
+
+      # Provide the container access to the database config JSON
+      - ./databases.json:/app/databases.json
+
+      # Mount all Cloudways application folders so uploads can be accessed.
+      # Example: /mnt/uploads/kbqrsbgatz/public_html/public/images
+      - /home/master/applications:/mnt/uploads
