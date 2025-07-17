@@ -16,4 +16,4 @@ services:
 
       # Mount all Cloudways application folders so uploads can be accessed.
       # Example: /mnt/uploads/kbqrsbgatz/public_html/public/images
-      - /home/master/applications:/mnt/uploads
+      # - /home/master/applications:/mnt/uploads
